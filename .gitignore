@@ -1,0 +1,61 @@
+# ---- Python cache & build artefacts ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# ---- Virtual environments ----
+.venv/
+venv/
+env/
+ENV/
+
+# ---- Secrets & credentials ----
+.env
+.env.*
+*.pem
+credentials.json
+secrets/
+
+# ---- IDE / editor files ----
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# ---- OS / temporary files ----
+.DS_Store
+Thumbs.db
+*.tmp
+*.log
+temp/
+tmp/
+
+# ---- Test & tooling caches ----
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# ---- Jupyter ----
+.ipynb_checkpoints/
+
+# ---- Datasets (keep the directories via .gitkeep) ----
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# ---- Trained model artefacts (keep the directory via .gitkeep) ----
+models/*
+!models/.gitkeep
+*.h5
+*.keras
+*.ckpt
+*.index
+*.data-00000-of-00001
+saved_model/

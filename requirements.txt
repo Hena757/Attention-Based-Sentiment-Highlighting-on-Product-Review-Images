@@ -1,0 +1,32 @@
+# ============================================================
+# Team 10 - Attention-Based Sentiment Highlighting
+# Python dependencies (install with: pip install -r requirements.txt)
+#
+# NOTE: the Tesseract OCR *engine* is a separate system-level install and is
+# NOT provided by the pytesseract package below. See README "Prerequisites".
+# ============================================================
+
+# --- Web application ---
+streamlit>=1.32,<2
+
+# --- Deep learning ---
+# TensorFlow bundles Keras. NumPy is capped below 2.0 so that TensorFlow
+# 2.16-2.19 wheels resolve cleanly on all platforms.
+tensorflow>=2.16,<2.20
+numpy>=1.26,<2.0
+
+# --- Data handling & evaluation ---
+pandas>=2.1,<3
+scikit-learn>=1.4,<2
+
+# --- OCR (also requires the Tesseract engine, see note above) ---
+opencv-python-headless>=4.9,<5
+pytesseract>=0.3.10,<1
+Pillow>=10,<12
+
+# --- Visualisation ---
+matplotlib>=3.8,<4
+seaborn>=0.13,<1
+
+# --- Testing ---
+pytest>=8,<9
